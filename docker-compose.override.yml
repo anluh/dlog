@@ -1,16 +1,9 @@
 version: "3"
 
-#services:
-#  php:
-#    image: wodby/drupal:$DRUPAL_TAG
-#    environment:
-#      PHP_FPM_CLEAR_ENV: "no"
-#    volumes:
-#      - codebase:/var/www/html
-#
-#  nginx:
-#    volumes:
-#      - codebase:/var/www/html
-#
-#volumes:
-#  codebase:
+services:
+  mariadb:
+    volumes:
+      - /home/anluh/.docker-databases/dblog:/var/lib/mysql
+  traefik:
+    ports:
+      - '80:80'
