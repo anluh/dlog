@@ -30,6 +30,9 @@ shell:
 drush:
 	docker exec $(shell docker ps --filter name='$(PROJECT_NAME)_php' --format "{{ .ID }}") drush -r $(DRUPAL_ROOT) $(filter-out $@,$(MAKECMDGOALS))
 
+bash:
+	@docker-compose exec --user 82 php bash
+
 logs:
 	@docker-compose logs -f $(filter-out $@,$(MAKECMDGOALS))
 
