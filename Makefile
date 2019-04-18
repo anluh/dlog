@@ -33,6 +33,9 @@ drush:
 bash:
 	@docker-compose exec --user 82 php bash
 
+start:
+	@docker-compose up -d
+
 logs:
 	@docker-compose logs -f $(filter-out $@,$(MAKECMDGOALS))
 
