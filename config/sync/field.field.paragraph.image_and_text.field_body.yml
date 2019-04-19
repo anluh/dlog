@@ -1,0 +1,22 @@
+uuid: 4b359244-3caa-48cd-8d5b-52a208b5aaab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.image_and_text
+  module:
+    - text
+id: paragraph.image_and_text.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: image_and_text
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
