@@ -1,0 +1,47 @@
+uuid: 0d8b730f-f49e-431b-a7a4-48f730f9e481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parragraps
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_parragraps
+field_name: field_parragraps
+entity_type: node
+bundle: page
+label: Parragraps
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      text:
+        weight: -15
+        enabled: false
+      image:
+        weight: -14
+        enabled: false
+      image_and_text:
+        weight: -13
+        enabled: false
+      galery:
+        weight: -12
+        enabled: false
+      code:
+        weight: -11
+        enabled: false
+      youtube:
+        weight: -10
+        enabled: false
+      youtube_gallery_:
+        weight: -9
+        enabled: false
+field_type: entity_reference_revisions
