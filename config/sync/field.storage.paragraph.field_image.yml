@@ -1,20 +1,17 @@
-uuid: b8d8c0c2-084f-490a-9045-602f324727cc
+uuid: 64e92ff3-23ce-4662-9d07-f0f830292a38
 langcode: en
 status: true
 dependencies:
   module:
-    - file
+    - media
     - paragraphs
 id: paragraph.field_image
 field_name: field_image
 entity_type: paragraph
-type: file
+type: entity_reference
 settings:
-  display_field: false
-  display_default: false
-  uri_scheme: public
-  target_type: file
-module: file
+  target_type: media
+module: core
 locked: false
 cardinality: 1
 translatable: true

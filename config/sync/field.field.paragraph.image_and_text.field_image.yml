@@ -1,12 +1,11 @@
-uuid: 3ba7ec3e-c7e2-4402-8ecc-802afd56168b
+uuid: 1d15212e-f7b3-4c90-b0d8-4dbf7acea770
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
+    - media.type.image
     - paragraphs.paragraphs_type.image_and_text
-  module:
-    - file
 id: paragraph.image_and_text.field_image
 field_name: field_image
 entity_type: paragraph
@@ -18,10 +17,12 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'fields/paragraph.image_and_text.field_image[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png jpg jpeg gif'
-  max_filesize: ''
-  description_field: false
-  handler: 'default:file'
-  handler_settings: {  }
-field_type: file
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

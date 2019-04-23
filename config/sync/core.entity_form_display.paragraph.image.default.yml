@@ -7,18 +7,17 @@ dependencies:
     - field.field.paragraph.image.field_title
     - paragraphs.paragraphs_type.image
   module:
-    - file
+    - media_library
 id: paragraph.image.default
 targetEntityType: paragraph
 bundle: image
 mode: default
 content:
   field_image:
+    type: media_library_widget
     weight: 1
-    settings:
-      progress_indicator: throbber
+    settings: {  }
     third_party_settings: {  }
-    type: file_generic
     region: content
   field_title:
     weight: 0

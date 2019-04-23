@@ -8,12 +8,10 @@ dependencies:
     - field.field.node.blog_article.field_parragraps
     - field.field.node.blog_article.field_promo_image
     - field.field.node.blog_article.field_tags
-    - image.style.thumbnail
     - node.type.blog_article
   module:
     - field_group
-    - file
-    - image
+    - media_library
     - paragraphs
     - path
     - scheduler
@@ -42,11 +40,12 @@ third_party_settings:
       weight: 7
       format_type: tab
       format_settings:
-        id: ''
-        classes: ''
+        label: Teaser
         formatter: closed
         description: ''
         required_fields: true
+        id: ''
+        classes: ''
       label: Teaser
     group_content:
       children:
@@ -66,7 +65,7 @@ third_party_settings:
         - field_promo_image
         - field_attachments
       parent_name: group_group
-      weight: 9
+      weight: 10
       format_type: tab
       format_settings:
         id: ''
@@ -96,11 +95,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_attachments:
+    type: media_library_widget
     weight: 27
-    settings:
-      progress_indicator: throbber
+    settings: {  }
     third_party_settings: {  }
-    type: file_generic
     region: content
   field_parragraps:
     weight: 13
@@ -122,12 +120,10 @@ content:
     type: paragraphs
     region: content
   field_promo_image:
-    weight: 26
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+    type: media_library_widget
+    weight: 28
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
     region: content
   field_tags:
     weight: 13
@@ -140,7 +136,7 @@ content:
     region: content
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
