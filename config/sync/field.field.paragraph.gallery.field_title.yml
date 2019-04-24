@@ -1,14 +1,14 @@
-uuid: d9317997-09a3-4a7b-bbef-a464cd405562
+uuid: e54c74d5-1935-469d-92a0-c99e89d367f8
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.galery
-id: paragraph.galery.field_title
+    - paragraphs.paragraphs_type.gallery
+id: paragraph.gallery.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: galery
+bundle: gallery
 label: Title
 description: ''
 required: false

@@ -1,17 +1,17 @@
-uuid: 19e7c256-1cf7-418e-933b-ff530307ec5d
+uuid: e24b4df0-ba63-40df-8a1e-747886bc16ff
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.galery.field_images
-    - field.field.paragraph.galery.field_title
-    - paragraphs.paragraphs_type.galery
-id: paragraph.galery.default
+    - field.field.paragraph.gallery.field_gallery
+    - field.field.paragraph.gallery.field_title
+    - paragraphs.paragraphs_type.gallery
+id: paragraph.gallery.default
 targetEntityType: paragraph
-bundle: galery
+bundle: gallery
 mode: default
 content:
-  field_images:
+  field_gallery:
     type: entity_reference_entity_view
     weight: 1
     label: above

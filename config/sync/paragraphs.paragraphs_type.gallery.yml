@@ -1,0 +1,13 @@
+uuid: d1bf9271-2c52-49dd-a1e7-51475255e1d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - dlog_paragraphs
+id: gallery
+label: Gallery
+icon_uuid: null
+description: ''
+behavior_plugins:
+  dlog_paragraph_gallery:
+    enabled: true
